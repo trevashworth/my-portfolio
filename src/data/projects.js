@@ -13,6 +13,6 @@ export const projects = [
     {
       title: "Portfolio Website",
       description: "The site you're currently viewing, showcasing my projects and skills.",
-      link: "https://yourportfolio.com"
+      link: "https://github.com/trevashworth/my-portfolio.git"
     },
   ]
