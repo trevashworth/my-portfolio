@@ -13,10 +13,10 @@ function App() {
 
         {/* Electric Gradient Main Title */}
         <header className="mb-10">
-          <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight 
-                         bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
-            Trevor Ashworth – Full-Stack Developer
-          </h1>
+        <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight 
+               bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent text-center">
+            Trevor Ashworth <br /> Full-Stack Developer
+        </h1>
           <p className="mt-3 text-zinc-400 leading-relaxed">
             A selection of recent work and experience.
           </p>
