@@ -11,6 +11,11 @@ export const projects = [
       link: "https://github.com/trevashworth/E-Commerce-API.git"
     },
     {
+      title: "Defeat the Evil Wizard Game",
+      description: "A Python-based adventure game using OOP, where players select custom heroes and battle the Evil Wizard with unique abilities and strategic actions.",
+      link: "https://github.com/trevashworth/Defeat-the-Evil-Wizard.git"
+    },
+    {
       title: "Portfolio Website",
       description: "The site you're currently viewing, showcasing my projects and skills.",
       link: "https://github.com/trevashworth/my-portfolio.git"
