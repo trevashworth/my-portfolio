@@ -14,7 +14,7 @@ function App() {
       <div className="mx-auto max-w-5xl px-6 py-12">
 
         {/* Electric Gradient Main Title */}
-        <header className="mb-10">
+        <header className="mb-5">
           <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight 
                bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent text-center">
             Trevor Ashworth <br /> Full-Stack Developer
@@ -25,7 +25,7 @@ function App() {
         </header>
 
         {/* Contact Section */}
-        <section className="mb-14">
+        <section className="mb-12">
           <div className="text-center mb-6">
             <h2 className="text-2xl font-semibold 
                    bg-gradient-to-r from-green-400 via-emerald-300 to-teal-400 bg-clip-text text-transparent 
