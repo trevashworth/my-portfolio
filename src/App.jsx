@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import { projects } from './data/projects'
 import { experience } from './data/experience'
+import { contact } from './data/contact'
 import './App.css'
 
 function App() {
   const [projectsState] = useState(projects)
   const [experienceState] = useState(experience)
+  const [contactState] = useState(contact)
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-zinc-950 via-zinc-900 to-zinc-950 text-zinc-100">
@@ -13,14 +15,79 @@ function App() {
 
         {/* Electric Gradient Main Title */}
         <header className="mb-10">
-        <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight 
+          <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight 
                bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent text-center">
             Trevor Ashworth <br /> Full-Stack Developer
-        </h1>
+          </h1>
           <p className="mt-3 text-zinc-400 leading-relaxed">
             A selection of recent work and experience.
           </p>
         </header>
+
+        {/* Contact Section */}
+        <section className="mb-14">
+          <div className="text-center mb-6">
+            <h2 className="text-2xl font-semibold 
+                   bg-gradient-to-r from-green-400 via-emerald-300 to-teal-400 bg-clip-text text-transparent 
+                   relative inline-block">
+              Contact
+              {/* Glowing underline */}
+              <span className="absolute left-1/2 -bottom-1 w-16 h-[2px] bg-gradient-to-r from-transparent via-green-400 to-transparent 
+                       transform -translate-x-1/2 blur-[1px]"></span>
+            </h2>
+          </div>
+
+          <div className="flex flex-col items-center gap-2 text-zinc-300">
+            {/* Phone • Email */}
+            <div className="flex flex-wrap items-center justify-center gap-3 text-sm">
+              <a href={`tel:${contactState[0].phone}`} className="text-cyan-300 hover:text-cyan-200 transition">
+                {contactState[0].phone}
+              </a>
+              <span className="text-zinc-600">•</span>
+              <a href={`mailto:${contactState[0].email}`} className="text-cyan-300 hover:text-cyan-200 transition">
+                {contactState[0].email}
+              </a>
+            </div>
+
+            {/* Links */}
+            <div className="flex flex-wrap items-center justify-center gap-2">
+              <a
+                href={contactState[0].linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center rounded-full border border-purple-500/50 bg-purple-900/20 px-3 py-1.5 text-xs
+                   text-purple-300 transition hover:bg-purple-800/40 hover:shadow-md hover:shadow-purple-500/40"
+              >
+                LinkedIn
+              </a>
+
+              <a
+                href={contactState[0].github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center rounded-full border border-cyan-500/50 bg-cyan-900/20 px-3 py-1.5 text-xs
+                   text-cyan-300 transition hover:bg-cyan-800/40 hover:shadow-md hover:shadow-cyan-500/40"
+              >
+                GitHub
+              </a>
+
+              <a
+                href={contactState[0].resume}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center rounded-full border border-emerald-500/50 bg-emerald-900/20 px-3 py-1.5 text-xs
+                   text-emerald-300 transition hover:bg-emerald-800/40 hover:shadow-md hover:shadow-emerald-500/40"
+              >
+                Résumé
+              </a>
+            </div>
+          </div>
+        </section>
+
+
+
+
+
 
         {/* Projects Section */}
         <section className="mb-14">
